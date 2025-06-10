@@ -1,0 +1,111 @@
+🚀 MỤC TIÊU:
+Tạo game bắn đom đóm cơ bản chạy được trong Facebook Messenger hoặc app Facebook, theo chuẩn Facebook Instant Games SDK.
+📁 CẤU TRÚC THƯ MỤC DỰ ÁN
+fb-firefly-shooter/
+├── index.html
+├── main.js
+├── game.js
+├── assets/
+│   └── (ảnh tàu, đom đóm, đạn, nền, hiệu ứng)
+├── sdk/
+│   └── fbinstant.6.3.js
+├── package.json
+├── .zip (nén toàn bộ để up Facebook)
+
+
+Dưới đây là mô tả đầy đủ và tổng hợp toàn bộ những gì chúng ta đã phát triển và trao đổi từ đầu tới giờ, để bạn dễ hình dung toàn cảnh dự án:
+
+---
+
+## 🚀 **Tổng quan dự án game "Firefly Shooter"**
+
+### 🌌 Ý tưởng chính:
+
+**"Firefly Shooter"** là một **mini-game HTML5** nhẹ nhàng, vui nhộn lấy cảm hứng từ cộng đồng **“Đom Đóm”**, nơi mỗi thành viên xem bản thân như một đom đóm nhỏ phát sáng trong bóng tối. Trong game, người chơi sẽ điều khiển một tàu vũ trụ mini bay trong không gian, bắn hạ các đom đóm xuất hiện để giành điểm số cao nhất, qua đó vừa giải trí vừa có thể cạnh tranh, kết nối giữa các thành viên trong cộng đồng.
+
+---
+
+### 🎮 **Các tính năng và gameplay chính:**
+
+* **Điều khiển**:
+
+  * Di chuyển tàu (trái/phải bằng bàn phím).
+  * Bắn đạn (phím Space).
+
+* **Mục tiêu**:
+
+  * Bắn trúng đom đóm để ghi điểm.
+  * Đom đóm ngẫu nhiên xuất hiện từ 4 hình ảnh khác nhau.
+  * Có hiệu ứng nổ ngẫu nhiên đẹp mắt khi trúng đạn.
+
+* **Kết thúc trò chơi**:
+
+  * Khi đom đóm chạm tàu, trò chơi dừng.
+  * Hiển thị điểm số và giao diện chơi lại.
+
+---
+
+### 🖼️ **Asset sử dụng:**
+
+* **Ảnh nền**: `bg.jpg` (720x1280 px) — nền vũ trụ.
+* **Tàu vũ trụ**: `ship.png` (40x70 px).
+* **Viên đạn**: `bullet.png` (400x200 px, scale về khoảng 40x20 px trong game).
+* **Đom đóm**: `firefly1-4.png` (400x400 px mỗi ảnh, scale xuống \~48x48 px).
+* **Hiệu ứng nổ**: `explosion1-4.png` (400x400 px, scale \~120x120 px).
+
+---
+
+### 💻 **Công nghệ sử dụng:**
+
+* **Phaser 3**: Framework lập trình game HTML5.
+* **HTML5 + JavaScript**: Công nghệ nền tảng.
+* **Facebook Instant Games SDK**: Để phát hành trên Facebook.
+
+---
+
+### 🌐 **Triển khai lên Facebook Instant Games:**
+
+* Đã hướng dẫn đóng gói file ZIP để tải lên Facebook Instant Games.
+* Đang tiến hành tạo ứng dụng trên Meta for Developers để phát hành.
+* Dự định tích hợp thêm bảng xếp hạng và chia sẻ điểm số trên Facebook.
+
+---
+
+### 📝 **Nội dung mô tả khi đăng tải game:**
+
+> "🛸 **FIRELY SHOOTER – Game bắn đom đóm không gian**
+> Một trò chơi đơn giản nhưng đầy cuốn hút! Điều khiển tàu vũ trụ nhỏ của bạn để bắn hạ càng nhiều đom đóm càng tốt. Cạnh tranh cùng những người bạn trong cộng đồng Đom Đóm để trở thành người sáng nhất! 🎯"
+
+---
+
+### 🎯 **Kết nối và cạnh tranh trong cộng đồng "Đom Đóm":**
+
+* Tạo ra tính tương tác và cạnh tranh vui vẻ giữa các thành viên.
+* Khuyến khích chia sẻ điểm số vào nhóm cộng đồng, tạo bảng xếp hạng nội bộ.
+* Sử dụng khẩu hiệu vui nhộn như:
+
+  * *"Ai là đom đóm sáng nhất vũ trụ?"*
+  * *"Cùng nhau bừng sáng – điểm cao để cà khịa bạn bè!"*
+
+---
+
+### 🎨 **Prompt tạo ảnh icon ứng dụng (sắp thực hiện):**
+
+Prompt này đang được chuẩn bị với phong cách vui nhộn, trẻ trung, có liên quan đến đom đóm, âm nhạc và tính "cà khịa" để phù hợp với đặc tính của cộng đồng người dùng trẻ tuổi.
+
+---
+
+## 📌 **Các bước tiếp theo (theo kế hoạch):**
+
+1. Hoàn thành tạo ứng dụng trên Meta.
+2. Tải game lên Facebook Instant Games, tiến hành test.
+3. Tích hợp bảng xếp hạng và tính năng chia sẻ điểm số lên Facebook.
+4. Ra mắt game và quảng bá rộng rãi trong cộng đồng "Đom Đóm".
+5. Phát triển thêm phiên bản nâng cấp (đom đóm di chuyển zig-zag, boss đom đóm, v.v.)
+
+---
+
+✅ **Kết luận:**
+Hiện tại, bạn đang ở bước gần cuối để chính thức phát hành game "Firefly Shooter" phiên bản đầu tiên trên nền tảng Facebook Instant Games. Các bước kế tiếp rất rõ ràng và dễ triển khai.
+
+Nếu cần thêm bất kỳ điều gì (prompt, asset, tính năng hoặc trợ giúp triển khai), hãy cho mình biết!
